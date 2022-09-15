@@ -26,7 +26,63 @@ I love playing cricket with my friends.
             <li>Aurangabad Caves</li>
             <li>Varad Ganesh temple</li>
         </ul>
-                <a href ="aboutme.html" >To know aboutme</a>
+        <a href ="aboutme.html" >To know aboutme</a>
+        <hr>
+        <h1>Recommended places to vist</h1>
+        <table>
+            <tr>
+                <th>Name of the city	</th>
+                <th>Important Locations</th>
+                <th>Time to spend</th>
+            </tr>
+            <tr>
+                <td>Hyderabad</td>
+                <td>Ram ki bandi</td>
+                <td>30min</td>
+            </tr>
+            <tr>
+                <td>Warangal</td>
+                <td>warangal fort</td>
+                <td>1hour</td>
+            </tr>
+            <tr>
+                <td>ooty</td>
+                <td>toy train</td>
+                <td>1hour</td>
+            </tr>
+            <tr>
+                <td>Mysore</td>
+                <td>Mysore palace</td>
+                <td>1hour</td>
+            </tr>
+        </table>
+      <hr>
+      <h1>Word Press code</h1>
+      <blockquote>WordPress: How to retrieve custom field data from the page?</blockquote>
+<a href =https://stackoverflow.com/questions/66293239/wordpress-how-to-retrieve-custom-field-data-from-the-page> Stackoverflow question</a>
+      <pre>
+        h3>All Post Meta</h3>
+
+        <?php 
+        
+          // Get all the data 
+          $getPostCustom = get_post_custom(); 
+        
+            foreach($getPostCustom as $name=>$value) {
+        
+                echo "<strong>" . $name . "</strong>"."  =>  ";
+        
+                foreach ($value as $nameAr=>$valueAr) {
+                        echo "<br />";
+                        echo $nameAr."  =>  ";
+                        echo var_dump($valueAr);
+                }
+        
+                echo "<br /><br />";
+        
+            }
+        ?>
+    </pre>
     </body>
-    </html>
+</html>
         
